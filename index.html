@@ -14,11 +14,13 @@
 
         <h1 :class="formatText">{{msg}}</h1>
 
-        <img :src="path + nameImage" alt="nameImage">
+        <button @click="isView = !isView">Cliccami!</button>
+        <button @click="changeImg('deco_time.jpg')">Cambia Immagine</button>
 
-        <button>Cliccami!</button>
+        <img  v-show="isView" :src="path + nameImage" alt="nameImage">
 
-        <p v-show="true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores et odio ex quaerat soluta ea. Consequatur quos blanditiis nam commodi facilis eos, quibusdam quae esse voluptatem cum sunt dolorum quas.</p>
+
+        <p v-show="!isView">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores et odio ex quaerat soluta ea. Consequatur quos blanditiis nam commodi facilis eos, quibusdam quae esse voluptatem cum sunt dolorum quas.</p>
 
 
     </div>
