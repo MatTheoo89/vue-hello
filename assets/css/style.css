@@ -9,6 +9,33 @@ body {
     background-color: #333;
 }
 
+h1 {
+    margin-bottom: 30px;
+}
+
+img {
+    width: 80%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+button {
+    margin: 20px;
+    padding: 10px 40px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: #0096c7;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 20px;
+}
+
 #app {
     margin: 30px 50px;
 }
