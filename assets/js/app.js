@@ -14,7 +14,12 @@ createApp({
     },
     methods: {
         changeImg(newImg){
-            this.nameImage = newImg;
+            if(newImg === this.nameImage){
+                this.nameImage = 'you_and_me.jpg';
+            }
+            else{
+                this.nameImage = newImg;
+            }
         },
     },
 }).mount('#app');
